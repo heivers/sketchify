@@ -1,4 +1,5 @@
-""" A streamlit app that transfers photos to sketches"""
+""" A streamlit app that transfers photos to sketches
+Try it here: https://share.streamlit.io/heivers/sketchify"""
 
 import cv2
 import numpy as np
