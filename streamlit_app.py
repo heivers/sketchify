@@ -12,7 +12,7 @@ st.write("""
          """
          )
 
-image = st.file_uploader("Upload an Image", type=['jpg', 'jpeg'])
+image = st.file_uploader("Upload an Image", type=['jpg', 'jpeg', 'png',])
 if image:
     st.image(image)
     img = Image.open(image)
