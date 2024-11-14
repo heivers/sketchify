@@ -5,14 +5,15 @@ import cv2
 import numpy as np
 import streamlit as st
 from PIL import Image
+from camera_input_live import camera_input_live
 
 st.write("""
-         ## This Web App turns a color jpg into a sketch.
+         ## This Web App turns your video-feed into a sketch.
          \nGo Ahead and try:
          """
          )
 
-image = st.file_uploader("Upload an Image", type=['jpg', 'jpeg', 'png',])
+image = camera_input_live()
 if image:
     st.image(image)
     img = Image.open(image)

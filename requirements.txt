@@ -1,2 +1,3 @@
 opencv-python-headless
 pillow
+streamlit-camera-input-live
