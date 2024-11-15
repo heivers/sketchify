@@ -15,7 +15,7 @@ st.write("""
 
 image = camera_input_live()
 if image:
-    st.image(image)
+    #st.image(image)
     img = Image.open(image)
     img_gray = cv2.cvtColor(np.float32(img), cv2.COLOR_RGB2GRAY)
     img_blur = cv2.GaussianBlur(img_gray, (21, 21), 0, 0)
